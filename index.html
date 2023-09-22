@@ -1,15 +1,188 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>This is the title of the webpage!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Page Example</title>
+    <!-- Include Bootstrap CSS (You can download it or use a CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        @media screen and (max-width: 390px) {
+            .advantage {
+                padding: 0;
+            }
+        }
+
+        strong {
+            color: #404040eb;
+        }
+    </style>
 </head>
 
-<body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this
-        <strong>p</strong> tag and its contents.
-    </p>
+<body style="font-family: Arial, Helvetica, sans-serif">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="logo.jpg" alt="Sample Picture" class="img-fluid">
+            </div>
+        </div>
 
-    <img src </body>
+        <div class="row">
+            <div class="col text-center">
+                <h4>Предимствата да си шахматист</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="advantage btn btn-outline-secondary">Концентрация</button>
+                    <button type="button" class="advantage btn btn-outline-secondary">Критичестко мислене</button>
+                    <button type="button" class="advantage btn btn-outline-secondary">Решителност</button>
+                </div>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-center">
+                <h2 class="bg-secondary-subtle">За мен</h2>
+                <p>Национални международни и свтовни успехи в шахмата. Най-младият
+                    лицензиран треньор. Съдия. Педагог. Отлично взети курсове „Детско юношеска психология“. Студент по
+                    философия.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img src="image_1.jpg" alt="Sample Picture" class="img-fluid">
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-center">
+                <h2 class="bg-secondary-subtle">Нашето семейство</h2>
+                <p>Ние тренираме. Пътуваме и лагеруваме. Състезавайки се помежду ни се учим как да се наслаждаваме на
+                    победата и да приемаме загубата с достойнство. Поемаме отговорности и приемаме
+                    предизвикателства. Играем индивидуално, но сме колектив.
+                    Всички си помагаме. Нашата среда учи и възпитава.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="family_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="family_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="family_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col text-center mb-2">
+                <h2 class="bg-secondary-subtle">За уроците</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button style="--bs-accordion-active-bg: #e2e3e5" class="accordion-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            <strong>Какво включват тренировките</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Дебюти</li>
+                                <li class="list-group-item">Мителшпили</li>
+                                <li class="list-group-item">Ендшпили</li>
+                                <li class="list-group-item">Анализ на партии</li>
+                                <li class="list-group-item">Тактики</li>
+                                <li class="list-group-item">Задачи, игри, упражнения</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button style="--bs-accordion-active-bg: #e2e3e5"
+                            class="accordion-button collapsed border-secondary-subtle" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <strong>Групови уроци</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Понеделник:</strong> 18:00 - 20:00</li>
+                                <li class="list-group-item"><strong>Петък:</strong> 18:00 - 20:00</li>
+                                <li class="list-group-item"><strong>Събота:</strong> 10:00 - 12:00</li>
+                                <li class="list-group-item"><strong>Неделя:</strong> 10:00 - 12:00</li>
+                            </ul>
+                            </br>
+                            <p><strong>Пакет 8 посещения:</strong> 120 лв</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button style="--bs-accordion-active-bg: #e2e3e5" class="accordion-button collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <strong>Индивидуални уроци</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>График:</strong> В удобен за вас час.</li>
+                                <li class="list-group-item"><strong>Времетраене:</strong> 90 минути</li>
+                                <li class="list-group-item"><strong>Тип:</strong> На място и онлайн.</li>
+                                <li class="list-group-item"><strong>Пакет 8 посещения:</strong> 160 лв</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="bg-secondary-subtle mb-3">Контакти</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Facebook:</strong> Габриела Великова</li>
+                    <li class="list-group-item"><strong>Телефон:</strong> 089 300 7957</li>
+                    <li class="list-group-item"><strong>Адрес:</strong> ул.Искър 49, гр.София</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
 
 </html>
